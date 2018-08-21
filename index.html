@@ -6,7 +6,9 @@
 		<meta id="myViewport" name="viewport" content="width=device-width, initial-scale=1.0"></meta>
 		<link href="assets/css/stylesheet.css" rel="stylesheet"></link>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="assets/js/math.min.js"></script>
 		<script src="assets/js/javascript.js"></script>
+		<script src="assets/js/calculator.js"></script>
 	</head>
 	<body>
 		<nav id="navbar">
@@ -48,6 +50,38 @@
 		<div id="container">
 			<div id="myFrame" class="content">
 
+			</div>
+		</div>
+		<div id="calcwindow" class="osborderend">
+			<div id="calcwindowheader" class="osborder">
+			</div>
+			<div id="calculator" class="osborder">
+				<div id="Equation"></div>
+				<div id="Result"></div>
+				<button onclick="addToEquation('%')">%</button>
+				<button onclick="addToEquation('sqrt(')">√</button>
+				<button onclick="addToEquation('^')">x<sup>y</sup></button>
+				<button onclick="addToEquation('/')">÷</button><br>
+				<button onclick="clearEquation()">CE</button>
+				<button onclick="clearEquation()">C</button>
+				<button onclick="backspace()">⌫</button>
+				<button onclick="addToEquation('*')">x</button></br>
+				<button onclick="addToEquation('7')">7</button>
+				<button onclick="addToEquation('8')">8</button>
+				<button onclick="addToEquation('9')">9</button>
+				<button onclick="addToEquation('-')">-</button><br>
+				<button onclick="addToEquation('4')">4</button>
+				<button onclick="addToEquation('5')">5</button>
+				<button onclick="addToEquation('6')">6</button>
+				<button onclick="addToEquation('+')">+</button></br>
+				<button onclick="addToEquation('1')">1</button>
+				<button onclick="addToEquation('2')">2</button>
+				<button onclick="addToEquation('3')">3</button>
+				<button onclick="calculate()">=</button><br>
+				<button onclick="addToEquation('0')">0</button>
+				<button onclick="addToEquation('.')">.</button>
+				<button onclick="addToEquation('(')">(</button>
+				<button onclick="addToEquation(')')">)</button></br>
 			</div>
 		</div>
 	</body>

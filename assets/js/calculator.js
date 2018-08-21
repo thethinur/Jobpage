@@ -80,6 +80,10 @@ function dragElement(elmnt) {
 
 function loadObject() {
 	dragElement(document.getElementById("calcwindow"));
+	$('calcwindow').attr("hide", true)
 	EquationElem = $('#Equation');
     ResultElem = $('#Result');
 };
+function toggleHide(){
+	$(calcwindow).attr("hide", !$(calcwindow).attr("hide"));
+}

@@ -49,10 +49,5 @@ $(document).ready(function () {
 			fitObjects[y].push(o[x]);
 		}
 		lastclass = $(o).attr("class");
-	}
-	console.log(fitObjects);
-	$.get("calculator.html", function (data) {
-		$("body").append($(data));
-		loadObject();
-	});
+	}	
 });

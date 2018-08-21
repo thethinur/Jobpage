@@ -251,6 +251,9 @@ a[status="Ansat"]:hover {
 	position: absolute;
 	z-index: 2;
 }
+#calcwindow[hide=true]{
+	display: none;
+}
 #calcwindowheader{
 	position: relative;
 	display: block;
