@@ -52,7 +52,7 @@ $(document).ready(function () {
 	}
 	console.log(fitObjects);
 	$.get("calculator.js", function (data) {
-		$("body").append(data);
+		$("body").append($(data));
 		loadObject();
 	});
 });
