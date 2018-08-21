@@ -51,4 +51,8 @@ $(document).ready(function () {
 		lastclass = $(o).attr("class");
 	}
 	console.log(fitObjects);
+	$.get("calculator.js", function (data) {
+		$("body").append(data);
+		loadObject();
+	});
 });
